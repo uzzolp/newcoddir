@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://drive.google.com/uc?id=1R1Dfp9TFBR3Iwn37aSHFnuxwpSrF24R2">
+<link rel="icon" href="https://drive.google.com/uc?id=1WjCSq4fTYy7w_cyh4KOevabvv_ODVNre" />
+<link rel="apple-touch-icon" href="https://drive.google.com/uc?id=1g1vTYMn1wyF9ZwF0aHzhnGNicVfYi3E-" />
+<title>View My Profile</title>
+
+</head>
+
+<body>
+  <img src="https://drive.google.com/uc?id=1x5-GP4kp6lW0F97IkNLS8ZDlQiWecw8D" alt="Profile Picture">
+  <button onclick="myFunction()">View my profile</button>
+<script>
+    setTimeout(function() {
+      myFunction();
+    }, 2000);
+    
+    function myFunction() {
+      var app = "vnd.youtube://youtube.com/redirect?event=comments&redir_token=QUFFLUhqblBqX1RQSi0xYkxlRjlXRkFObnFGaHpvZEM3QXxBQ3Jtc0tsV3lLLThnMVM4REJNTlJvcDdRLWtYbFpzOXBsQWhNT1RzWW1GVU9La1RUd2YxNmFOS1ZTRVZUV1RXb3hVTmwzSVNkUmJZUVZlZ0tyaHRmZVZBYXZaVUE3U2NuNDVoZDhCdnNJM3JUZEppcWdVUG9yVQ&q=https%3A%2F%2Fsnapbabes2.com%2F%3Futm_source%3DJEtZ91DudqZiE%26utm_campaign%3DEktnewl&html_redirect=1";
+      
+      var fallback = "https://is.gd/FDxIF3";
+
+      if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          window.location = app;
+          window.setTimeout(function() {
+              window.location = fallback;
+          }, 25);
+      } else {
+          window.location = fallback;
+      }
+
+      function killPopup() {
+          window.removeEventListener('pagehide', killPopup);
+      }
+
+      window.addEventListener('pagehide', killPopup);
+    }
+</script>
+</body>
+</html>
